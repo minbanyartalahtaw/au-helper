@@ -1,0 +1,88 @@
+.displayContainer{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cardd{
+    cursor: pointer;
+    margin: 0px 40px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ff6f32;
+    border-radius: 20px;
+    color: white;
+    user-select: none;
+    transform: scale(1);
+    transition: all 0.2s;
+    animation-name: example;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+a{
+    text-decoration: none;
+}
+.cardd:active{
+    transform: scale(0.95);
+}
+.icon{
+    margin-top: 60px;
+    font-size: 80px;
+}
+
+@keyframes example{
+    0%{/*
+        transform: translateY(300px);
+        opacity: 0;
+        */
+    }
+    25%{
+       
+    }
+    50%{
+        
+    }
+    75%{
+        
+    }
+    100%{
+        /*transform: translateY(0px);
+        */
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .cardd{
+        transform: scale(0.7);
+        transition: all 0.1s;
+        margin: -20px 0px;
+    }
+    .cardd:active{
+        transform: scale(0.65);
+    }
+}
+
+
+@media screen and (max-width:740px) {
+    .cardd{
+        margin: 20px 0px;
+        transform: scale(0.8);
+        transition: all 0.1s;
+        margin: -20px 0px;
+        margin: 0 auto;
+    }
+    .cardd:active{
+        transform: scale(0.75);
+    }
+    .displayContainer{
+        margin: 0 auto;
+        display: block;
+    }
+}
