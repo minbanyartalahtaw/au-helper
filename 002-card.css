@@ -1,88 +1,36 @@
+.cardContainer {
+    margin-top: 20px;
+    border-color: transparent;
+}
 .displayContainer{
-    width: auto;
+    margin-top: 100px;
+}
+.displayContainer a {
+    text-decoration: none;
+    color: white;
+}
+.card{
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    border-color: transparent;
+    background-color: #f34343;
+    border-radius: 10px;
 }
-.cardd{
-    cursor: pointer;
-    margin: 0px 40px;
-    width: 250px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ff6f32;
-    border-radius: 20px;
+
+.card i{
     color: white;
-    user-select: none;
-    transform: scale(1);
-    transition: all 0.2s;
-    animation-name: example;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-}
-a{
-    text-decoration: none;
-}
-.cardd:active{
-    transform: scale(0.95);
-}
-.icon{
-    margin-top: 60px;
-    font-size: 80px;
+    font-size: 30px;
 }
 
-@keyframes example{
-    0%{/*
-        transform: translateY(300px);
-        opacity: 0;
-        */
-    }
-    25%{
-       
-    }
-    50%{
-        
-    }
-    75%{
-        
-    }
-    100%{
-        /*transform: translateY(0px);
-        */
-    }
-}
-
-
-@media screen and (max-width:450px) {
-    .cardd{
-        transform: scale(0.7);
-        transition: all 0.1s;
-        margin: -20px 0px;
-    }
-    .cardd:active{
-        transform: scale(0.65);
-    }
-}
-
-
-@media screen and (max-width:740px) {
-    .cardd{
-        margin: 20px 0px;
-        transform: scale(0.8);
-        transition: all 0.1s;
-        margin: -20px 0px;
-        margin: 0 auto;
-    }
-    .cardd:active{
-        transform: scale(0.75);
-    }
-    .displayContainer{
-        margin: 0 auto;
-        display: block;
-    }
+.card p{
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    margin: 0px 20px;
 }

@@ -3,17 +3,25 @@
     padding: 0;
 }
 .mainContainer{
+    position: relative;
     margin:0 auto;
     width: 90%;
     height: 100vh;
+    animation-name: moveTop;
+    animation-duration: 0.5s;
 }
-.mainContainer h1{
-    font-weight: lighter;
+.container h1{
+    font-family: monospace;
     font-size: 50px;
-    color: #FF4D00;
+    color: #f34343;
     text-align: center;
     user-select: none;
-    margin: 200px 0px 110px 0px;
+}
+.container{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 @media (max-width:450px) {
@@ -23,7 +31,6 @@
         color: #FF4D00;
         text-align: center;
         user-select: none;
-        margin: 100px 0px;
     }
 
 }
@@ -35,8 +42,17 @@
         color: #FF4D00;
         text-align: center;
         user-select: none;
-        margin: 100px 0px;
     }
 
 }
 
+@keyframes moveTop {
+    0% {
+      opacity:0 ;
+      transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
