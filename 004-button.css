@@ -1,0 +1,35 @@
+.btn {
+    background-color: whitesmoke;
+}
+.map-right h2{
+    font-weight: lighter;
+    font-size: 30px;
+    color: #868686;
+    text-align: center;
+    user-select: none;
+    margin: 20px 0px;
+}
+.map-right{
+    margin-top: -100px;
+}
+
+.opicityZero {
+    opacity: 0;
+}
+.buildingButton{
+    color:black;
+}
+.floorNumber{
+    color: black;
+}
+
+map{
+    text-shadow: none;
+    text-size-adjust: calc(flex-direction);
+    
+}
+.display-none{
+    display: none;
+}
+
+
